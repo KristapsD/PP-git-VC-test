@@ -1,0 +1,86 @@
+{
+  "ComponentIndexes": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "Button1": 7,
+    "Button1_1": 9,
+    "Gallery1": 10,
+    "galleryTemplate1": 11,
+    "Icon3": 6,
+    "Label1": 5,
+    "Label3": 16,
+    "Rectangle1": 4,
+    "Screen1": 3,
+    "Separator2": 15,
+    "Subtitle2": 13,
+    "Subtitle2_1": 14,
+    "TextInput1": 8,
+    "Title2": 12
+  },
+  "FunctionParamsInvariantScripts": {},
+  "HeaderLastSavedDateTimeUTC": "05/25/2022 07:06:43",
+  "IsLegacyComponentAllowGlobalScopeCase": false,
+  "LocalConnectionIDReferences": {},
+  "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceFileNames": {},
+  "LocalResourceRootPaths": {},
+  "OldLogoFileName": "ehb02jzs.jpg",
+  "OrderComponentMetadata": {},
+  "OrderComponentTemplate": {},
+  "OrderDataSource": {
+    "CustomGallerySample": 4,
+    "Pieteikumi": 5,
+    "Pieteikumi\\default.cds_hd_pieteikumi_views": 3,
+    "Pieteikumi\\field_security_permission_type": 0,
+    "Pieteikumi\\hd_pieteikumi_statecode": 1,
+    "Pieteikumi\\hd_pieteikumi_statuscode": 2
+  },
+  "OrderGroupControls": {},
+  "OrderPcfTemplate": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "button": 3,
+    "gallery": 5,
+    "icon": 2,
+    "label": 1,
+    "rectangle": 0,
+    "text": 4
+  },
+  "PublishOrderIndices": {
+    "App": 0,
+    "Button1": 3,
+    "Button1_1": 5,
+    "Gallery1": 6,
+    "galleryTemplate1": 7,
+    "Icon3": 2,
+    "Label1": 1,
+    "Label3": 12,
+    "Rectangle1": 0,
+    "Screen1": 0,
+    "Separator2": 11,
+    "Subtitle2": 9,
+    "Subtitle2_1": 10,
+    "TextInput1": 4,
+    "Title2": 8
+  },
+  "ResourcesJsonIndices": {
+    "Image-SampleImage": 0
+  },
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.1876377,
+    "ControlCount": {
+      "button": 2,
+      "gallery": 1,
+      "galleryTemplate": 1,
+      "icon": 1,
+      "label": 5,
+      "rectangle": 2,
+      "screen": 1,
+      "text": 1
+    },
+    "DeserializationLoadTime": 1.1710254,
+    "ErrorCount": 0
+  },
+  "WasLocalDatabaseReferencesEmpty": false
+}

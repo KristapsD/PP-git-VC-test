@@ -1,0 +1,126 @@
+Screen1 As screen:
+
+    Rectangle1 As rectangle:
+        Height: =93
+        Width: =640
+        ZIndex: =1
+
+    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        Height: =590
+        Items: =Pieteikumi
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =162
+        Y: =546
+        ZIndex: =1
+
+        Title2 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Name
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =20
+            ZIndex: =1
+
+        Subtitle2 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'IP adrese'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =Title2.Y + Title2.Height + 4
+            ZIndex: =2
+
+        Separator2 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+        Subtitle2_1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Statuss
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =101
+            ZIndex: =5
+
+    Label1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =70
+        Size: =21
+        Text: =User().FullName
+        Width: =220
+        X: =420
+        Y: =11
+        ZIndex: =2
+
+    Button1 As button:
+        Height: =120
+        OnSelect: |-
+            =Launch("http://ip4only.me/")
+        Size: =24
+        Text: ="Apskatīties Savu publisko IP adresi"
+        Width: =570
+        X: =35
+        Y: =129
+        ZIndex: =3
+
+    TextInput1 As text:
+        Default: =
+        Height: =73
+        HintText: ="Jūsu publiskā IP adrese"
+        Size: =21
+        Width: =470
+        X: =129
+        Y: =286
+        ZIndex: =4
+
+    Button1_1 As button:
+        Height: =120
+        OnSelect: |-
+            =Patch(Pieteikumi, {Name: Label1.Text, 'IP adrese': TextInput1.Text, 'Pieteicēja e-pasts': User().Email});
+        Size: =24
+        Text: ="Nosūtīt pieteikumu"
+        Width: =570
+        X: =35
+        Y: =405
+        ZIndex: =6
+
+    Label3 As label:
+        Height: =70
+        Size: =21
+        Text: =Icon.Reload
+        Width: =560
+        X: =45
+        Y: =806
+        ZIndex: =8
+
+    Icon3 As icon.Reload:
+        Icon: =Icon.Reload
+        OnSelect: |-
+            =Refresh(Pieteikumi);
+            TextInput1.Clear;
+        X: =15
+        Y: =14
+        ZIndex: =9
+

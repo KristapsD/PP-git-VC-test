@@ -1,0 +1,120 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "hd_pieteikumis",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "hd_pieteikumi",
+    "MaxGetRowsCount": 500,
+    "Name": "Pieteikumi",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "hd_ipadrese": "IP adrese",
+      "hd_name": "Name",
+      "hd_pieteicejaepasts": "Pieteicēja e-pasts",
+      "hd_pieteikumi_AsyncOperations": "System Jobs",
+      "hd_pieteikumi_BulkDeleteFailures": "Bulk Delete Failures",
+      "hd_pieteikumi_DuplicateBaseRecord": "Duplicate Records (hd_pieteikumi_DuplicateBaseRecord)",
+      "hd_pieteikumi_DuplicateMatchingRecord": "Duplicate Records (hd_pieteikumi_DuplicateMatchingRecord)",
+      "hd_pieteikumi_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "hd_pieteikumi_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "hd_pieteikumi_ProcessSession": "Process Sessions",
+      "hd_pieteikumi_SyncErrors": "Sync Errors",
+      "hd_pieteikumiid": "Pieteikumi",
+      "hd_statuss": "Statuss",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Pieteikumi",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Pieteikumi (Views)",
+    "Name": "_hd_pieteikumi_views",
+    "RelatedEntityName": "Pieteikumi",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1c936a5d-40f3-4429-9050-6d472a21b59a": "Inactive Pieteikumi",
+      "708434ef-1a89-415e-8d1a-687055e85d22": "Pieteikumi Lookup View",
+      "7307c053-035e-48e6-acdd-696614f6d713": "Pieteikumi Advanced Find View",
+      "8e236190-0c28-411e-a20e-2885b30feb9b": "Pieteikumi Associated View",
+      "97cce595-e23b-4a05-be8b-9ca81cb41e2e": "Active Pieteikumi"
+    }
+  },
+  {
+    "DisplayName": "A Yes or No boolean",
+    "Name": "field_security_permission_type",
+    "OptionSetInfoNameMapping": {
+      "0": "Not Allowed",
+      "4": "Allowed"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "hd_statuss",
+        "OptionSetReferenceEntityName": "Pieteikumi"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "hd_statuss",
+    "RelatedEntityName": "Pieteikumi",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Pieteikumi)",
+    "Name": "hd_pieteikumi_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Pieteikumi"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Pieteikumi",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Pieteikumi)",
+    "Name": "hd_pieteikumi_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Pieteikumi"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Pieteikumi",
+    "Type": "OptionSetInfo"
+  }
+]
